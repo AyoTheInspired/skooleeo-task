@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+}
+
+.app {
+	min-height: 100vh;
+	background: #ddd;
+}
+
+.flexed {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__wrapper {
+	background: #fff;
+	border-radius: 15px;
+}
+
+.form__input {
+	display: block;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+.form__input:focus {
+	outline-width: 0;
+}
