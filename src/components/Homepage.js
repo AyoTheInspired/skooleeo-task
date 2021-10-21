@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useStateValue } from "../context/provider/StateProvider";
-import { Container, Row, Form, Button } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { actionTypes } from "../context//actions/actionTypes";
 import useForm from "../utils/useForm";
@@ -8,7 +8,7 @@ import validator from "../utils/formValidator";
 
 function Homepage() {
 	const history = useHistory();
-	const [{ user }, dispatch] = useStateValue();
+	const [{}, dispatch] = useStateValue();
 	const { values, handleChange, register, errors } = useForm(validator);
 
 	function checkStorage() {
@@ -23,8 +23,6 @@ function Homepage() {
 			});
 		}
 	}
-
-	console.log(user);
 
 	useEffect(() => {
 		checkStorage();

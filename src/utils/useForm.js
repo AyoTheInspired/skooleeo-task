@@ -44,11 +44,9 @@ const useForm = (validator) => {
 			});
 			history.push("/profile");
 		}
-
-		// console.log(user);
 	};
 
-	return { values, register, handleChange, errors };
+	return { values, setValues, register, handleChange, errors };
 };
 
 export default useForm;
