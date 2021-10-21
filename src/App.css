@@ -27,3 +27,8 @@
 .form__input:focus {
 	outline-width: 0;
 }
+
+.form__error {
+	color: red;
+	font-size: 12px;
+}
