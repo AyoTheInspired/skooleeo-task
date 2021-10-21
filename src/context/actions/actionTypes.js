@@ -1,0 +1,5 @@
+export const actionTypes = {
+	SET_USER: "SET_USER",
+	DELETE_USER: "LOGOUT_USER",
+	RETRIEVE_USER: "RETRIEVE_USER",
+};

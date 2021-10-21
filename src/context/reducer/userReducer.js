@@ -1,7 +1,4 @@
-export const actionTypes = {
-	SET_USER: "SET_USER",
-	DELETE_USER: "DELETE_USER",
-};
+import { actionTypes } from "../actions/actionTypes";
 
 const userReducer = (state, action) => {
 	switch (action.type) {
@@ -11,10 +8,16 @@ const userReducer = (state, action) => {
 				user: action.payload,
 			};
 
-		case actionTypes.DELETE_USER:
+		case actionTypes.LOGOUT_USER:
 			return {
 				...state,
 				user: null,
+			};
+
+		case actionTypes.RETRIEVE_USER:
+			return {
+				...state,
+				user: action.payload,
 			};
 
 		default:

@@ -13,7 +13,8 @@
 	align-items: center;
 }
 
-.form__wrapper {
+.form__wrapper,
+.profile__wrapper {
 	background: #fff;
 	border-radius: 15px;
 }
@@ -32,3 +33,12 @@
 	color: red;
 	font-size: 12px;
 }
+
+.flex-btw {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* .user__detail {
+	margin-left: auto !important;
+} */
